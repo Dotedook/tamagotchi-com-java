@@ -1,23 +1,20 @@
 public class Tamagotchi {
 	
-	protected boolean vivo;
-	protected int idade;
-	protected int peso;
+	private boolean vivo;
+	private int idade;
+	private int peso;
 	private String nome;
-	protected int quantVezesSemDormir;
-	protected Comer comer;
-	protected Dormir dormir;
-	protected Entediado entediado;
+	private int quantVezesSemDormir;
+	private Comer comer;
+	private Dormir dormir;
+	private Entediado entediado;
 	
-	public Tamagotchi() {
+	public Tamagotchi(String nome) {
 		this.vivo = true;
 		this.idade = 0;
 		this.peso = 1;
-		this.nome = "Dudu";
+		this.nome = nome;
 		this.quantVezesSemDormir = 0;
-		this.comer = new Comer();
-		this.dormir = new Dormir();
-		this.entediado = new Entediado();
 	}
 	
 	
@@ -51,20 +48,39 @@ public class Tamagotchi {
 	public void setQuantVezesSemDormir(int quantVezesSemDormir) {
 		this.quantVezesSemDormir = quantVezesSemDormir;
 	}
-
-
-
-	public String toString() {
-		String retorno = String.format("O %s é o seu Tamagotchi.\nEl@ tem %d dias de idade.\nEl@ está com %d kg.", nome, idade, peso);
-		return retorno;
+	public Comer getComer() {
+		return comer;
 	}
-	
+	public void setComer(Comer comer) {
+		this.comer = comer;
+	}
+	public Dormir getDormir() {
+		return dormir;
+	}
+	public void setDormir(Dormir dormir) {
+		this.dormir = dormir;
+	}
+	public Entediado getEntediado() {
+		return entediado;
+	}
+	public void setEntediado(Entediado entediado) {
+		this.entediado = entediado;
+	}
+
 	
 	public void morrer() {
 		this.vivo = false;
 		System.out.println("\nSeu tamagotchi morreu, para jogar novamente reinicie o programa.");
 		System.exit(0);
 	}
+	
+	public String toString() {
+		String retorno = String.format("O %s é o seu Tamagotchi.\nEl@ tem %d dias de idade.\nEl@ está com %d kg.", nome, idade, peso);
+		return retorno;
+	}
+	
+	
+	
 	
 
 }

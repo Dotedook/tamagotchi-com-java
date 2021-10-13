@@ -1,7 +1,22 @@
 
-public class Entediado extends Tamagotchi {
+public class Entediado{
+	
+
+	private Tamagotchi tamagotchi;
+	
+	public Entediado(Tamagotchi tamagotchi) {
+		this.tamagotchi = tamagotchi;
+	}
 	
 	
+	public void setTamagotchi(Tamagotchi tamagotchi) {
+		this.tamagotchi = tamagotchi;
+	}
+	public Tamagotchi getTamagotchi() {
+		return this.tamagotchi;
+	}
+	
+
 	public void ficarEntediado() {
 		if (opcaoEntediado() == 1)
 			correr();
@@ -32,19 +47,15 @@ public class Entediado extends Tamagotchi {
 	
 	
 	public void correr() {
-		super.peso -= 4;
-		super.comer.comerMuito();
+		tamagotchi.setPeso(tamagotchi.getPeso() - 4);
+		tamagotchi.getComer().comerMuito();
 	}
 	
 	
 	public void caminhar() {
-		super.peso -= 1;
-		super.comer.querComer();
+		tamagotchi.setPeso(tamagotchi.getPeso() - 1);
+		tamagotchi.getComer().querComer();
 	}
-	
-	
-	
-	
-	
+
 	
 }

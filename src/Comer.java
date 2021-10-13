@@ -1,7 +1,22 @@
 
-public class Comer extends Tamagotchi {
+public class Comer{
 
+	private Tamagotchi tamagotchi;
+	
+	
+	public Comer(Tamagotchi tamagotchi) {
+		this.tamagotchi = tamagotchi;
+	}
 
+	
+	public void setTamagotchi(Tamagotchi tamagotchi) {
+		this.tamagotchi = tamagotchi;
+	}
+	public Tamagotchi getTamagotchi() {
+		return this.tamagotchi;
+	}
+	
+	
 	public void querComer() {
 		switch (opcaoComer()) {
 		case 1:
@@ -40,38 +55,37 @@ public class Comer extends Tamagotchi {
 	}
 	
 	
-
 	public void comerMuito() {
-		this.peso += 5;
+		tamagotchi.setPeso(tamagotchi.getPeso() + 5);
 		checkAcimaDoPeso();
-		super.dormir.dormir();
+		tamagotchi.getDormir().dormir();
 	}
 
 	
 	public void comerPouco() {
-		this.peso += 1;
+		tamagotchi.setPeso(tamagotchi.getPeso() + 1);
 		checkAcimaDoPeso();
 	}
 	
 
 	public void naoComer() {
-		this.peso -= 2;
+		tamagotchi.setPeso(tamagotchi.getPeso() - 2);
 		checkAbaixoDoPeso();
 	}
 	
 	
 	public void checkAcimaDoPeso() {
-		if (super.peso >= 20) {
+		if (tamagotchi.getPeso() >= 20) {
 			InterfaceUsuario.tamagotchiComeuDemais();
-			super.morrer();
+			tamagotchi.morrer();
 		}
 	}
 	
 	
 	public void checkAbaixoDoPeso() {
-		if (super.peso <= 0) {
+		if (tamagotchi.getPeso() <= 0) {
 			InterfaceUsuario.tamagotchiDesnutrido();
-			super.morrer();
+			tamagotchi.morrer();
 		}
 	}
 	

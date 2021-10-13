@@ -1,7 +1,21 @@
 
-public class Dormir extends Tamagotchi {
+public class Dormir{
+
+	private Tamagotchi tamagotchi;
+	
+	public Dormir(Tamagotchi tamagotchi) {
+		this.tamagotchi = tamagotchi;
+	}
 
 	
+	public void setTamagotchi(Tamagotchi tamagotchi) {
+		this.tamagotchi = tamagotchi;
+	}
+	public Tamagotchi getTamagotchi() {
+		return this.tamagotchi;
+	}
+	
+
 	public void querDormir() {
 		if(checkTamagotchiParaDormir()) {
 			InterfaceUsuario.tamagotchiDormirDireto();
@@ -13,7 +27,7 @@ public class Dormir extends Tamagotchi {
 	
 	
 	private boolean checkTamagotchiParaDormir() {
-		return (super.quantVezesSemDormir >= 5);
+		return (tamagotchi.getQuantVezesSemDormir() >= 5);
 	}
 	
 	
@@ -48,27 +62,28 @@ public class Dormir extends Tamagotchi {
 
 	
 	public void dormir() {
-		super.setQuantVezesSemDormir(0);
+		tamagotchi.setQuantVezesSemDormir(0);
 		aumentarIdadeAoDormir();
 		checkVivoAposDormir();
 	}
 
 	
 	private void aumentarIdadeAoDormir() {
-		super.idade += 1;
+		tamagotchi.setIdade(tamagotchi.getIdade() + 1);
 	}
 
 	
 	private void checkVivoAposDormir() {
-		if (super.idade >= 15) {
+		if (tamagotchi.getIdade() >= 15) {
 			InterfaceUsuario.tamagotchiVelhoDemais();
-			super.morrer();
+			tamagotchi.morrer();
 		}
 	}
 		
 	
 	private void seManterAcordado() {
-		super.quantVezesSemDormir += 1;
+		tamagotchi.setQuantVezesSemDormir(tamagotchi.getQuantVezesSemDormir() + 1);
 	}
+	
 	
 }
