@@ -5,6 +5,9 @@ public class Tamagotchi {
 	protected int peso;
 	private String nome;
 	protected int quantVezesSemDormir;
+	protected Comer comer;
+	protected Dormir dormir;
+	protected Entediado entediado;
 	
 	public Tamagotchi() {
 		this.vivo = true;
@@ -12,6 +15,9 @@ public class Tamagotchi {
 		this.peso = 1;
 		this.nome = "Dudu";
 		this.quantVezesSemDormir = 0;
+		this.comer = new Comer();
+		this.dormir = new Dormir();
+		this.entediado = new Entediado();
 	}
 	
 	
@@ -47,12 +53,18 @@ public class Tamagotchi {
 	}
 
 
+
+	public String toString() {
+		String retorno = String.format("O %s é o seu Tamagotchi.\nEl@ tem %d dias de idade.\nEl@ está com %d kg.", nome, idade, peso);
+		return retorno;
+	}
 	
-		public void morrer() {
-			this.vivo = false;
-			System.out.println("\nSeu tamagotchi morreu, para jogar novamente reinicie o programa.");
-			System.exit(0);
-		}
+	
+	public void morrer() {
+		this.vivo = false;
+		System.out.println("\nSeu tamagotchi morreu, para jogar novamente reinicie o programa.");
+		System.exit(0);
+	}
 	
 
 }

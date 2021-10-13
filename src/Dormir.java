@@ -18,16 +18,10 @@ public class Dormir extends Tamagotchi {
 	
 	
 	private void caseSwitchDormir() {
-		switch (opcaoDormir()) {
-		case 1:
+		if (opcaoDormir() == 1)
 			dormir();
-			break;
-		case 2:
+		else
 			seManterAcordado();
-			break;
-		default:
-			InterfaceUsuario.erroSwitch();		
-		}
 	}
 	
 	
