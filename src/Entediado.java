@@ -4,9 +4,11 @@ public class Entediado{
 
 	private Tamagotchi tamagotchi;
 	
+	
 	public Entediado(Tamagotchi tamagotchi) {
 		this.tamagotchi = tamagotchi;
 	}
+	
 	
 	
 	public void setTamagotchi(Tamagotchi tamagotchi) {
@@ -17,6 +19,7 @@ public class Entediado{
 	}
 	
 
+	
 	public void ficarEntediado() {
 		if (opcaoEntediado() == 1)
 			correr();
@@ -37,23 +40,25 @@ public class Entediado{
 	
 	
 	private int garantirOpcaoCorreta(int opcao) {
-			while(opcao != 1 && opcao != 2) {
-				InterfaceUsuario.opcaoInvalida();
-				InterfaceUsuario.opcaoEntediado();
-				opcao = Teclado.leInt();
-			}
-			return opcao;
+		while(opcao != 1 && opcao != 2) {
+			InterfaceUsuario.opcaoInvalida();
+			InterfaceUsuario.opcaoEntediado();
+			opcao = Teclado.leInt();
+		}
+		return opcao;
 	}
 	
 	
 	public void correr() {
 		tamagotchi.setPeso(tamagotchi.getPeso() - 4);
+		tamagotchi.getComer().checkAbaixoDoPeso();
 		tamagotchi.getComer().comerMuito();
 	}
 	
 	
 	public void caminhar() {
 		tamagotchi.setPeso(tamagotchi.getPeso() - 1);
+		tamagotchi.getComer().checkAbaixoDoPeso();
 		tamagotchi.getComer().querComer();
 	}
 

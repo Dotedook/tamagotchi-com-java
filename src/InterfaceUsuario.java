@@ -61,6 +61,10 @@ public class InterfaceUsuario {
 		System.out.println("O seu tamagotchi está entediado. O que você irá fazer?");
 	}
 	
+	public static void tamagotchiMorreu() {
+		System.out.println("\nSeu tamagotchi morreu, para jogar novamente reinicie o programa.");
+	}
+	
 	
 }
 

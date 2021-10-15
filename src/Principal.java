@@ -2,6 +2,7 @@
 public class Principal {
 	
 	public static void main(String[] args) {
+		
 		Tamagotchi tamagotchi = new Tamagotchi(Teclado.leString("Qual o nome do seu Tamagotchi?"));
 		
 		Comer comer = new Comer(tamagotchi);
@@ -13,9 +14,9 @@ public class Principal {
 		tamagotchi.setEntediado(entediado);
 		
 		
+		
 		int opcao;
-		
-		
+
 		while (true) {
 			System.out.println(tamagotchi);
 			opcao = (int)(Math.random() * 3 ) + 1;
@@ -31,8 +32,9 @@ public class Principal {
 				comer.querComer();
 				break;
 			default:
-				System.out.println("ERRO: O CÓDIGO NÃO DEVERIA CHEGAR AQUI");
+				InterfaceUsuario.erroSwitch();
 			}
+			
 		}
 		
 

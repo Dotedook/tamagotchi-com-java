@@ -1,13 +1,13 @@
 public class Tamagotchi {
 	
+	
 	private boolean vivo;
-	private int idade;
-	private int peso;
+	private int idade, peso, quantVezesSemDormir;
 	private String nome;
-	private int quantVezesSemDormir;
 	private Comer comer;
 	private Dormir dormir;
 	private Entediado entediado;
+	
 	
 	public Tamagotchi(String nome) {
 		this.vivo = true;
@@ -70,7 +70,7 @@ public class Tamagotchi {
 	
 	public void morrer() {
 		this.vivo = false;
-		System.out.println("\nSeu tamagotchi morreu, para jogar novamente reinicie o programa.");
+		InterfaceUsuario.tamagotchiMorreu();
 		System.exit(0);
 	}
 	
