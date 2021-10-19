@@ -103,6 +103,7 @@ public class InterfaceUsuario {
 				+ "    **	    Para jogar novamente, reinicie o programa!	   **\r\n"
 				+ "    **							   **\r\n"
 				+ "    *********************************************************");
+		System.out.println("Jogo feito por: Eduardo Augusto Kuhn");
 	}
 	
 	public static void tamagotchiInicial() {
