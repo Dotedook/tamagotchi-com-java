@@ -1,4 +1,3 @@
-
 public class InterfaceUsuario {
 
 	
@@ -6,65 +5,185 @@ public class InterfaceUsuario {
 		System.out.println("Você digitou uma opção Inválida.");
 	}
 	
-	
 	public static void opcaoDormir() {
-		System.out.println("[1] - Dormir\n[2] - Se manter Acordado.");
+		System.out.println("    #########################################################\r\n"
+				+ "    #                                                       #\r\n"
+				+ "    # 	[1] - Dormir.		[2] - Se manter acordado.   #\r\n"
+				+ "    # 			                                    #\r\n"
+				+ "    #########################################################");
 	}
-	
 	
 	public static void erroSwitch() {
 		System.out.println("ERRO: O CÓDIGO NÃO DEVERIA CHEGAR AQUI");
 	}
 	
-	
 	public static void tamagotchiVelhoDemais() {
-		System.out.println("Seu Tamagotchi ficou velho demais e morreu em seu sono.");
+		System.out.println("    /////////////////////////////////////////////////////////\r\n"
+				+ "    //							   //\r\n"
+				+ "    //		Seu Tamagotchi ficou velho demais!         //\r\n"
+				+ "    //		Ele morreu dormindo :(			   //\r\n"
+				+ "    //							   //\r\n"
+				+ "    /////////////////////////////////////////////////////////");
 	}
-	
 	
 	public static void tamagotchiQuerDormir() {
-		System.out.println("O seu tamagotchi, quer dormir. O que você irá fazer?");
+		System.out.println("    *********************************************************\r\n"
+				+ "    **							   **\r\n"
+				+ "    ** 		O seu tamagotchi, está com sono!!	   **\r\n"
+				+ "    ** 		O que você irá querer fazer?	     	   **\r\n"
+				+ "    **							   **\r\n"
+				+ "    *********************************************************");
 	}
-	
 	
 	public static void tamagotchiDormirDireto() {
-		System.out.println("Seu tamagotchi sentiu sono outra vez e desmaiou.");
+		System.out.println("    *********************************************************\r\n"
+				+ "    **							   **\r\n"
+				+ "    ** 	 Seu tamagotchi sentiu sono outra vez e desmaiou.  **\r\n"
+				+ "    **							   **\r\n"
+				+ "    *********************************************************");
 	}
-	
 	
 	public static void tamagotchiQuerComer() {
-		System.out.println("O seu tamagotchi, quer comer. O que você irá fazer?");
+		System.out.println("    *********************************************************\r\n"
+				+ "    **							   **\r\n"
+				+ "    ** 	  	O seu tamagotchi, está com fome!!          **\r\n"
+				+ "    ** 		O que você irá querer fazer?	     	   **\r\n"
+				+ "    **							   **\r\n"
+				+ "    *********************************************************");
 	}
-	
 	
 	public static void opcaoComer() {
-		System.out.println("[1] - Comer Muito.\n[2] - Comer Pouco.\n[3] - Não Comer.");
+		System.out.println("    #########################################################\r\n"
+				+ "    #    						    #\r\n"
+				+ "    #	[1] - Comer Muito	[2] - Comer Pouco           #\r\n"
+				+ "    #   [3] - Não Comer                                     #\r\n"
+				+ "    # 			                                    #\r\n"
+				+ "    #########################################################");
 	}
-	
 	
 	public static void tamagotchiComeuDemais() {
-		System.out.println("Seu tamagotchi comeu demais, ele explodiu :(");
+		System.out.println("    /////////////////////////////////////////////////////////\r\n"
+				+ "    //							   //\r\n"
+				+ "    //		Seu Tamagotchi comeu demais!	           //\r\n"
+				+ "    //		Na sua ultima garfada ele explodiu!        //\r\n"
+				+ "    //							   //\r\n"
+				+ "    /////////////////////////////////////////////////////////  ");
 	}
-	
 	
 	public static void tamagotchiDesnutrido() {
-		System.out.println("Você não alimentou seu tamagotchi o suficiente e ele ficou desnutrido :(");
+		System.out.println("    /////////////////////////////////////////////////////////\r\n"
+				+ "    //							   //\r\n"
+				+ "    //		Você não alimentou o seu tamagotchi!       //\r\n"
+				+ "    //		Ele ficou desnutrido e faleceu :(          //\r\n"
+				+ "    //							   //\r\n"
+				+ "    /////////////////////////////////////////////////////////");
 	}
-	
 	
 	public static void opcaoEntediado() {
-		System.out.println("[1] - Correr.\n[2] - Caminhar.");
+		System.out.println("    #########################################################\r\n"
+				+ "    #                                                       #\r\n"
+				+ "    # 	[1] - Correr		[2] - Caminhar	   	    #\r\n"
+				+ "    # 			                                    #\r\n"
+				+ "    #########################################################");
 	}
 	
-	
 	public static void tamagotchiEntediado() {
-		System.out.println("O seu tamagotchi está entediado. O que você irá fazer?");
+		System.out.println("    *********************************************************\r\n"
+				+ "    **							   **\r\n"
+				+ "    ** 	  	O seu tamagotchi, está entediado!!         **\r\n"
+				+ "    ** 		O que você irá querer fazer?	     	   **\r\n"
+				+ "    **							   **\r\n"
+				+ "    *********************************************************");
 	}
 	
 	public static void tamagotchiMorreu() {
-		System.out.println("\nSeu tamagotchi morreu, para jogar novamente reinicie o programa.");
+		System.out.println("    *********************************************************\r\n"
+				+ "    **							   **\r\n"
+				+ "    ** 	  	  O seu tamagotchi morreu :(		   **\r\n"
+				+ "    **	    Para jogar novamente, reinicie o programa!	   **\r\n"
+				+ "    **							   **\r\n"
+				+ "    *********************************************************");
 	}
 	
+	public static void tamagotchiInicial() {
+		System.out.println("####################################################################\r\n"
+				+ "#  _____                                       _         _      _  #\r\n"
+				+ "# |_   _|                                     | |       | |    (_) #\r\n"
+				+ "#   | |  __ _  _ __ ___    __ _   __ _   ___  | |_  ___ | |__   _  #\r\n"
+				+ "#   | | / _` || '_ ` _ \\  / _` | / _` | / _ \\ | __|/ __|| '_ \\ | | #\r\n"
+				+ "#   | || (_| || | | | | || (_| || (_| || (_) || |_| (__ | | | || | #\r\n"
+				+ "#   \\_/ \\__,_||_| |_| |_| \\__,_| \\__, | \\___/  \\__|\\___||_| |_||_| #\r\n"
+				+ "#                                 __/ |                            #\r\n"
+				+ "#                                |___/                             #\r\n"
+				+ "####################################################################");
+	}
+	
+	public static void tamagotchiDesenho() {
+		System.out.println("    #########################################################\r\n"
+				+ "    #               &&&&&&&             &&&&&&&             #\r\n"
+				+ "    #              &&&&&&&&&%         %&&&&&&&&&            #\r\n"
+				+ "    #            &&&&&&&&&&&&&       &&&&&&&&&&&&&          #\r\n"
+				+ "    #            &&&&&&&&&&&&&       &&&&&&&&&&&&&          #\r\n"
+				+ "    #            &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&          #\r\n"
+				+ "    #            &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&          #\r\n"
+				+ "    #          &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&        #\r\n"
+				+ "    #         &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&       #\r\n"
+				+ "    #       &&.......................................&&     #\r\n"
+				+ "    #       &&......&&&&&&&&%...........&&&&&&&&.....&&     #\r\n"
+				+ "    #     &&.....&&   &&&  &&&.......&    &&&  &&&.....&&   #\r\n"
+				+ "    #     &&.....&&   &&&&&&&&.......&    &&&&&&&&.....&&   #\r\n"
+				+ "    #     &&.......&  &&&&&&&&........%&  &&&&&&&&.....&&   #\r\n"
+				+ "    #     &&.......*&&&&&&&&%...........&&&&&&&&**.....&&   #\r\n"
+				+ "    #       &&..............,&........%&.............&&     #\r\n"
+				+ "    #         &...............&&&&&&&&,.............&       #\r\n"
+				+ "    #              &&&&&&&&&&&&&&&&&&&&&&&&&&&&&            #\r\n"
+				+ "    #                 &&...................&&               #\r\n"
+				+ "    #              &....&.................&....&            #\r\n"
+				+ "    #              &....&.................&....&            #\r\n"
+				+ "    #                   &.................&                 #\r\n"
+				+ "    #                   &...,&&&&&&&&&,...&                 #\r\n"
+				+ "    #                    &&&%         %&&&                  #\r\n"
+				+ "    ######################################################### ");
+	}
+	
+	public static void covaTamagotchi() {
+		System.out.println("    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\r\n"
+				+ "    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\r\n"
+				+ "    ~~            ______    _____   ______                 ~~\r\n"
+				+ "    ~~            | ___ \\  |_   _|  | ___ \\                ~~\r\n"
+				+ "    ~~            | |_/ /    | |    | |_/ /                ~~\r\n"
+				+ "    ~~            |    /     | |    |  __/                 ~~\r\n"
+				+ "    ~~            | |\\ \\  _ _| |_ _ | |                    ~~\r\n"
+				+ "    ~~            \\_| \\_|(_)\\___/(_)\\_|                    ~~\r\n"
+				+ "    ~~                                                     ~~\r\n"
+				+ "    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\r\n"
+				+ "    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\r\n"
+				+ "    ~~                                                     ~~  \r\n"
+				+ "    ~~                                                     ~~\r\n"
+				+ "    ~~                                 @@@@                ~~\r\n"
+				+ "    ~~                               @..**..@              ~~\r\n"
+				+ "    ~~                               @.****.@              ~~\r\n"
+				+ "    ~~                               @.****.@              ~~\r\n"
+				+ "    ~~                      @@@@@@@@@@.****.@@@@@@@@@      ~~   \r\n"
+				+ "    ~~                    @..***********************..@    ~~\r\n"
+				+ "    ~~                    @.*************************.@    ~~\r\n"
+				+ "    ~~                      @@@@@@@@@@.****.@@@@@@@@@      ~~\r\n"
+				+ "    ~~                               @.****.@              ~~\r\n"
+				+ "    ~~                               %.****.@              ~~\r\n"
+				+ "    ~~                  @@@@@@       @.****.@              ~~\r\n"
+				+ "    ~~                 @,@,@,,,@.    @.****.@              ~~\r\n"
+				+ "    ~~                @,,,,,,@@@@%   @.****.@              ~~\r\n"
+				+ "    ~~         @@@,,@ @,@,@,@@@@@@@@@@@@@@@@@@@@           ~~\r\n"
+				+ "    ~~    @@#####################%@@#########%%%####@      ~~\r\n"
+				+ "    ~~ @&######&&&#################################&&#@    ~~\r\n"
+				+ "    ~~ @&#####################&&###############&#######@   ~~\r\n"
+				+ "    ~~  *@@@@@##################%&&#####################@  ~~\r\n"
+				+ "    ~~              @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@       ~~\r\n"
+				+ "    ~~                                                     ~~\r\n"
+				+ "    ~~                                                     ~~\r\n"
+				+ "    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\r\n"
+				+ "    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+	}
 	
 }
 

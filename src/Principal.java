@@ -1,26 +1,36 @@
-
 public class Principal {
 	
+
 	public static void main(String[] args) {
 		
+		InterfaceUsuario.tamagotchiInicial();
+
 		Tamagotchi tamagotchi = new Tamagotchi(Teclado.leString("Qual o nome do seu Tamagotchi?"));
 		
+
 		Comer comer = new Comer(tamagotchi);
 		Dormir dormir = new Dormir(tamagotchi);
 		Entediado entediado = new Entediado(tamagotchi);
 		
+
 		tamagotchi.setComer(comer);
 		tamagotchi.setDormir(dormir);
 		tamagotchi.setEntediado(entediado);
 		
 		
-		
+
 		int opcao;
 
+
 		while (true) {
+
+			InterfaceUsuario.tamagotchiDesenho();
 			System.out.println(tamagotchi);
+			
+
 			opcao = (int)(Math.random() * 3 ) + 1;
 			
+
 			switch (opcao) {
 			case 1:
 				dormir.querDormir();

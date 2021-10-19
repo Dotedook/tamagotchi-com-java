@@ -67,20 +67,23 @@ public class Tamagotchi {
 		this.entediado = entediado;
 	}
 
-	
+
 	public void morrer() {
+		InterfaceUsuario.covaTamagotchi();
 		this.vivo = false;
 		InterfaceUsuario.tamagotchiMorreu();
 		System.exit(0);
 	}
 	
+
 	public String toString() {
-		String retorno = String.format("O %s é o seu Tamagotchi.\nEl@ tem %d dias de idade.\nEl@ está com %d kg.", nome, idade, peso);
+		String retorno = String.format("    #########################################################\r\n"
+				+ "    # O %s é o seu tamagotchi.                            #\r\n"
+				+ "    # El@ tem %s dias.                                       #\r\n"
+				+ "    # El@ esta com %s kg.                                    #\r\n"
+				+ "    #########################################################", nome, idade, peso);
 		return retorno;
 	}
-	
-	
-	
-	
+
 
 }
